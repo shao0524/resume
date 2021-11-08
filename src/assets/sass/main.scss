@@ -1,0 +1,143 @@
+.image{
+    max-width:100%;
+    height:auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.icon{
+    color: $warning;
+    &:hover{
+        color: darken($warning, 10%);
+    }
+    
+}
+.headShot {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mobile{
+        width:125px;
+        height:125px;
+    }
+}
+
+
+.title {
+    color: $primary;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    margin-bottom: 20px;
+    &::before{
+        content:"";
+        position: absolute;
+        min-height:2px;
+        bottom:0;
+        left:0;
+        right:-15px;
+        background-color: $primary;
+    }
+    &::after{
+        content:"";
+        position: absolute;
+        min-width:2px;
+        bottom:-10px;
+        top:0;
+        right:0;
+        background-color: $primary;
+    }
+}
+
+.itemBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,.1);
+}
+
+.production{
+    height:100%;
+    margin-bottom: 20px;
+    h5{
+        margin-top: 10px;
+    }
+    &-body{
+        a{
+            text-align: center;
+        }
+    }
+    &-footer{
+        text-align: end;
+        margin-top: 20px;
+        .btnDemo{
+            border-radius:15px;
+            margin:0 5px;
+            padding:10px 20px;
+            background:linear-gradient(45deg,$primary,transparent,$primary);
+            color: color-contrast($primary);
+            position: relative;
+            text-transform: uppercase;
+            box-shadow: 1px 1px 5px 1px rgba(0,0,0,.3);
+            cursor: pointer;
+            &:hover{
+                background:linear-gradient(45deg,lighter($primary,15%),transparent,lighter($primary,5%));
+                color: color-contrast($primary);
+                &::before{
+                    content:"";
+                    position: absolute;
+                    top:-5px;
+                    right:-5px;
+                    bottom:-5px;
+                    left:-5px;
+                    filter: blur(20px);
+                    background: inherit;
+                    border-radius:15px;
+                }
+            }
+        }   
+        .btnGit{
+            border-radius:15px;
+            padding:10px 20px;
+            margin:0 5px;
+            text-transform: uppercase;
+            background:linear-gradient(45deg,$warning,transparent,$warning);
+            color: color-contrast($warning);
+            position: relative;
+            cursor: pointer;
+            box-shadow: 1px 1px 5px 1px rgba(0,0,0,.3);
+            &:hover{
+                background:linear-gradient(45deg,darken($warning,5%),transparent,darken($warning,5%));
+                &::before{
+                    content:"";
+                    position: absolute;
+                    top:-5px;
+                    right:-5px;
+                    bottom:-5px;
+                    left:-5px;
+                    filter: blur(20px);
+                    background: inherit;
+                    border-radius:15px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.footer {
+    background: $primary;
+    a{
+        :hover{
+            background: $primary;
+            color:white;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+//banner
+.banner {
+    height:100vh;
+    background: black;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("~image/bannerBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment:fixed; 
+
+    &-mask{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top:50%;
+        background-color: white;
+        transform: translateY(-50%) skew(
+            0deg,-10deg);
+        color:white;
+        overflow: hidden;
+        opacity: 1;
+        background-size: cover;
+        background-color: #7DB9DE;
+        opacity: .5;
+        @include mobile{
+            height:70%;
+        }
+    }
+    &-content{
+        width: 100%;
+        z-index:1000;
+        ul{
+            padding-left: 0;
+            li{
+                list-style: none;
+                color:white;
+                a{
+                    color:#FBE251;
+                    &:hover{
+                        color:#F7C242;
+                    }
+                }
+            }
+        }
+    }
+    
+    .scrollerBtn {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $primary;
+        border: 1px solid $primary;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url("assets/image/arrow_down.svg");
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: scroller 1s infinite ease-in alternate;
+        cursor: pointer;
+        z-index: 1001;
+        &:hover {
+            box-shadow: 0 0 5px 3px white;
+        }
+    }
+}
+@keyframes scroller {
+    from {
+        bottom: 5%;
+    }
+
+    to {
+        bottom: 0;
+    }
+}

@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none !important;
+    color:$primary;
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+i {
+    width: 30px;
+    text-align: center;
+}
+
