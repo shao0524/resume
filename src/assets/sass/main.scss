@@ -5,13 +5,6 @@
     object-fit: cover;
 }
 
-.icon{
-    color: $warning;
-    &:hover{
-        color: darken($warning, 10%);
-    }
-    
-}
 .headShot {
     width: 250px;
     height: auto;
@@ -19,12 +12,13 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    @include pad{
+        width: 200px;
+    }
     @include mobile{
-        width:125px;
-        height:125px;
+        width: 150px;
     }
 }
-
 
 .title {
     color: $primary;
@@ -53,12 +47,9 @@
 }
 
 .itemBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     height:100%;
-    box-shadow: 5px 5px 10px 1px rgba(0,0,0,.1);
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,.1);    
 }
 
 .production{
@@ -135,9 +126,9 @@
 .footer {
     background: $primary;
     a{
-        :hover{
-            background: $primary;
-            color:white;
+        color:white;
+        &:hover{
+            color:darken(white, 20%);
         }
     }
 }
