@@ -4,15 +4,22 @@
       <div class="container">
         <div class="header">
           <img src="~image/headShot.jpg" class="headShot" alt="headShot" />
-          <h2 class="h2 mt-3">陳致劭</h2>
-          <h5>
-            前端工程師 <span class="mx-1">|</span>
-            <i class="bi bi-envelope-open me-1"></i>
-            <a href="mailto:shao83524@gmail.com">shao83524@gmail.com</a>
-            <span class="mx-1">|</span>
-            <i class="bi bi-phone me-1"></i>
-            <a href="tel+0958141997">0958141997</a>
-          </h5>
+          <h2 class="mt-3 text-center">陳致劭</h2>
+          <div class="info">
+            <h5>前端工程師</h5>
+            <span class="line">|</span>
+            <span>
+              <i class="bi bi-envelope-open me-1"></i>
+              <a href="mailto:shao83524@gmail.com">shao83524@gmail.com</a></span
+            >
+            <span class="line">|</span>
+            <span>
+              <i class="bi bi-phone me-1"></i>
+              <a href="tel+0958141997">0958141997</a></span
+            >
+          </div>
+
+          <h5></h5>
           <!-- img -->
         </div>
         <!-- 介紹 -->

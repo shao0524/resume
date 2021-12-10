@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="row mt-5">
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <slot name="img"></slot>
       </div>
-      <div class="col-6">
-        <h5 class="text-center">
+      <div class="col-12 col-md-6">
+        <h5 class="text-center mt-3 mt-lg-0">
           <slot name="title"></slot>
         </h5>
         <div class="linkGroup">
