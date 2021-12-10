@@ -94,7 +94,7 @@
                 <li>使用Vue-Router管理路由</li>
                 <li>使用Vue-Axios串接六角學院提供API</li>
                 <li>使用SCSS管理樣式與RWD響應式網頁</li>
-                <li>使用Vue-Validator表單驗證</li>
+                <li>使用Vee-Validator表單驗證</li>
                 <li>使用第三方套件Vue-Swiper做輪播效果</li>
               </ul>
             </template>
