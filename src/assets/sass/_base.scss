@@ -8,7 +8,8 @@
 a {
     cursor: pointer;
     text-decoration: none !important;
-    color:$primary;
+    color: $primary;
+
     &:hover {
         text-decoration: none !important;
     }
@@ -17,8 +18,4 @@ a {
 i {
     width: 30px;
     text-align: center;
-}
-
-ul{
-    padding: 0 !important;
 }
