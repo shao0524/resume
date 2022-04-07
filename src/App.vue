@@ -17,6 +17,11 @@
               <i class="bi bi-phone me-1"></i>
               <a href="tel+0958141997">0958141997</a></span
             >
+            <span class="line">|</span>
+            <span>
+              <i class="fab fa-codepen"></i>
+              <a href="https://codepen.io/shao83524">CodePen</a>
+            </span>
           </div>
 
           <h5></h5>
@@ -41,7 +46,7 @@
               <h3>Web Layout</h3>
               <ul class="subList">
                 <li class="subList-item">熟悉SCSS用法</li>
-                <li class="subList-item">使用Bootstrap4切版</li>
+                <li class="subList-item">使用Bootstrap切版</li>
                 <li class="subList-item">建立RWD響應式網頁</li>
               </ul>
             </li>
@@ -62,7 +67,7 @@
                 <li class="subList-item">使用Vue-Cli建立專案</li>
                 <li class="subList-item">使用Vue-Router管理路由</li>
                 <li class="subList-item">使用Vue-Axios串接API</li>
-                <li class="subList-item">略懂Vuex</li>
+                <li class="subList-item">使用Vuex</li>
               </ul>
             </li>
           </ul>
@@ -131,32 +136,32 @@
                   透過查詢地區找到該地區的自行車車道並顯示該車道附近的租借站資訊
                 </li>
                 <li>使用SCSS管理樣式並製作RWD響應式網頁</li>
+                <li>使用第三方套件Swiper做輪播效果</li>
               </ul>
             </template>
           </ProductComponent>
           <br />
           <ProductComponent>
             <template v-slot:img>
-              <img src="~image/todolist.jpg" class="image" alt="TodoList" />
+              <img
+                src="~image/chiuantaishin.jpg"
+                class="image"
+                alt="全台新商行"
+              />
             </template>
-            <template v-slot:title>
-              Vue.js + Firebase即時資料庫 TodoList
-            </template>
+            <template v-slot:title> 全台新商行 </template>
             <template v-slot:btn>
-              <a class="linkBtn" href="https://shao0524.github.io/todolist/"
-                >Demo</a
-              >
-              <span class="mx-1">|</span>
-              <a class="linkBtn" href="https://github.com/shao0524/todolist"
-                >Github</a
-              >
+              <a class="linkBtn" href="http://www.chiuantaishin.com/">Demo</a>
             </template>
             <template v-slot:content>
               <ul>
+                <li>此網站是為了向客戶展示主要販售商品而開發</li>
                 <li>網站主要使用Vue.js架設</li>
-                <li>串接至Firebase的Realtime Database</li>
-                <li>將代辦事項依照狀態做區分</li>
-                <li>製作新增、刪除、修改功能</li>
+                <li>使用Vue-Router管理路由</li>
+                <li>串接至Firebase的Firestore Database和Storage</li>
+                <li>使用Bootstrap 4切版</li>
+                <li>使用SCSS管理樣式並製作RWD響應式網頁</li>
+                <li>使用node.js渲染打包後的檔案部屬至Heroku</li>
               </ul>
             </template>
           </ProductComponent>
